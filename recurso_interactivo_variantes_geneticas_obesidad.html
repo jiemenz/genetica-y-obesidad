@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variantes genéticas asociadas a la obesidad | Recurso interactivo</title>
+<style>
+:root{--navy:#17324d;--teal:#087e8b;--mint:#dff5ef;--coral:#ff8066;--gold:#ffd166;--ink:#203040;--paper:#f7fbff;--white:#fff;--muted:#526579}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(130deg,#17324d,#087e8b);color:white;padding:32px 20px 28px}
+.wrap{max-width:980px;margin:auto;padding:0 18px}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:bold;color:var(--gold)}
+h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;margin:8px 0 12px}
+header p{max-width:700px;font-size:1.05rem;margin:0}
+.pill{display:inline-block;border:1px solid #ffffff80;border-radius:99px;padding:5px 11px;margin-top:18px;font-size:.85rem}
+main{padding:24px 0 50px}.section{background:white;border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 5px 22px #17324d0d;border:1px solid #e3edf4}
+h2{color:var(--navy);margin:0 0 10px;font-size:1.45rem} h3{margin:0 0 7px;color:var(--navy)}
+.lead{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.gene{border:1px solid #dce8ef;border-radius:14px;padding:16px;background:#fbfdff}
+.gene button,.primary{border:0;border-radius:10px;padding:10px 13px;background:var(--teal);color:white;font-weight:bold;cursor:pointer;font-size:.95rem}
+.gene button:focus,.primary:focus,.option:focus{outline:3px solid var(--gold);outline-offset:2px}
+.gene .detail{display:none;margin-top:12px;padding-top:10px;border-top:1px solid #dce8ef}
+.gene.open .detail{display:block}
+.tag{font-size:.78rem;font-weight:bold;color:var(--teal);text-transform:uppercase;letter-spacing:.7px}
+.callout{background:var(--mint);border-left:5px solid var(--teal);padding:14px 16px;border-radius:8px;margin:12px 0}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.step{background:#e8f1f7;border-radius:8px;padding:7px 10px;font-weight:bold;font-size:.9rem}
+.question{border-top:1px solid #e3edf4;padding:16px 0}
+.question:first-child{border-top:0}.question p{font-weight:bold;margin:0 0 10px}
+.options{display:grid;gap:8px}
+.option{display:flex;gap:9px;align-items:flex-start;text-align:left;border:1px solid #ccdbe5;background:white;padding:11px 12px;border-radius:10px;cursor:pointer;color:var(--ink);font:inherit}
+.option:hover{background:#f0faf8}.option.selected{border-color:var(--teal);background:#e8f8f4}
+.feedback{display:none;padding:10px 12px;border-radius:8px;margin-top:9px}
+.feedback.show{display:block}.correct{background:#e1f6e8;color:#14532d}.incorrect{background:#fff0e8;color:#7c2d12}
+footer{background:#17324d;color:white;padding:22px 0;font-size:.9rem}
+.progress{height:9px;background:#e5edf3;border-radius:99px;overflow:hidden;margin:10px 0 16px}.bar{height:100%;width:0;background:var(--coral);transition:width .25s}
+.small{font-size:.9rem;color:var(--muted)} .score{font-size:1.2rem;font-weight:bold;color:var(--navy)}
+button:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:520px){.section{padding:17px}.gene{padding:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Recurso educativo digital · Biología y salud</div>
+<h1>¿Qué relación tienen los genes con la obesidad?</h1>
+<p>Explora variantes genéticas vinculadas con la regulación del apetito, la saciedad y el balance energético. Después, aplica lo aprendido en un breve reto interactivo.</p>
+<div class="pill">Tiempo estimado: 7–10 minutos</div>
+</div></header>
+<main class="wrap">
+<section class="section">
+<h2>🎯 Propósito de aprendizaje</h2>
+<p>Al terminar, podrás <strong>explicar cómo algunas variantes genéticas se asocian con la susceptibilidad a la obesidad</strong> y distinguir entre predisposición genética y destino inevitable.</p>
+<div class="steps"><span class="step">1. Explora</span><span class="step">2. Relaciona</span><span class="step">3. Resuelve</span><span class="step">4. Reflexiona</span></div>
+<div class="callout"><strong>Idea clave:</strong> la obesidad es multifactorial. Los genes pueden influir en el riesgo, pero también intervienen el entorno, el sueño, los medicamentos, la actividad física, la alimentación, el estrés y otros factores. Una variante no determina por sí sola el peso de una persona.</div>
+</section>
+
+<section class="section">
+<h2>🧬 1. Explora las variantes</h2>
+<p class="lead">Selecciona “Conocer función” en cada tarjeta. Lee qué se ha observado y cómo interpretarlo.</p>
+<div class="grid">
+<article class="gene"><div class="tag">Gen FTO</div><h3>Regulación del apetito</h3><p>Algunas variantes comunes se asocian estadísticamente con mayor índice de masa corporal.</p><button onclick="toggleCard(this)">Conocer función</button><div class="detail"><p><strong>¿Qué se investiga?</strong> Su relación con señales de apetito, preferencias alimentarias y regulación energética.</p><p><strong>Interpretación:</strong> el efecto promedio de variantes comunes suele ser modesto; no permite predecir por sí solo el peso individual.</p></div></article>
+<article class="gene"><div class="tag">Gen MC4R</div><h3>Señales de saciedad</h3><p>Participa en una vía cerebral importante para regular hambre, saciedad y balance energético.</p><button onclick="toggleCard(this)">Conocer función</button><div class="detail"><p><strong>¿Qué se investiga?</strong> Variantes comunes asociadas con el riesgo y variantes raras que pueden alterar la función del receptor.</p><p><strong>Interpretación:</strong> algunas variantes raras de gran efecto pueden causar formas poco frecuentes de obesidad de inicio temprano; no son equivalentes a las variantes comunes.</p></div></article>
+<article class="gene"><div class="tag">Gen TMEM18</div><h3>Asociación con IMC</h3><p>Se ha identificado en estudios genómicos como una región asociada con el índice de masa corporal.</p><button onclick="toggleCard(this)">Conocer función</button><div class="detail"><p><strong>¿Qué se investiga?</strong> Su papel potencial en circuitos del sistema nervioso y en la regulación del peso.</p><p><strong>Interpretación:</strong> una asociación estadística no demuestra automáticamente un mecanismo causal simple.</p></div></article>
+<article class="gene"><div class="tag">Genes BDNF / SH2B1</div><h3>Cerebro y balance energético</h3><p>Variaciones en estas regiones también se han relacionado con el control del apetito y el peso corporal.</p><button onclick="toggleCard(this)">Conocer función</button><div class="detail"><p><strong>¿Qué se investiga?</strong> La señalización neuronal, la saciedad y las vías que participan en el balance energético.</p><p><strong>Interpretación:</strong> la evidencia varía según la variante; los hallazgos deben evaluarse en su contexto científico.</p></div></article>
+</div>
+</section>
+
+<section class="section">
+<h2>🔎 2. Relaciona conceptos</h2>
+<p class="lead">Piensa en cada caso antes de consultar la respuesta.</p>
+<div class="question"><p>¿Cuál afirmación describe mejor una variante genética común asociada con el IMC?</p><button class="primary" onclick="reveal('r1')">Ver respuesta</button><div class="feedback" id="r1"><strong>Respuesta:</strong> puede modificar ligeramente la probabilidad promedio, pero no determina el peso de una persona. Los efectos dependen también del entorno y de muchas otras variantes.</div></div>
+<div class="question"><p>¿Por qué “asociado con la obesidad” no siempre significa “causa directa de la obesidad”?</p><button class="primary" onclick="reveal('r2')">Ver respuesta</button><div class="feedback" id="r2"><strong>Respuesta:</strong> un estudio puede detectar que una variante y un rasgo aparecen relacionados. Para establecer causalidad hacen falta pruebas adicionales sobre el mecanismo y descartar explicaciones alternativas.</div></div>
+</section>
+
+<section class="section" id="quiz">
+<h2>🧠 3. Reto de aprendizaje</h2>
+<p class="lead">Responde las tres preguntas. Recibirás retroalimentación inmediata y podrás volver a intentarlo.</p>
+<div class="progress" aria-label="Progreso del cuestionario"><div class="bar" id="bar"></div></div>
+<div id="questions"></div>
+<button class="primary" id="finish" onclick="finishQuiz()">Calificar respuestas</button>
+<button class="primary" id="retry" onclick="resetQuiz()" style="display:none;margin-left:8px;background:#526579">Volver a intentar</button>
+<div id="result" class="callout" style="display:none" aria-live="polite"></div>
+</section>
+
+<section class="section">
+<h2>💡 4. Cierre: aplica lo aprendido</h2>
+<p><strong>Situación:</strong> alguien comenta: “Si una persona tiene una variante relacionada con obesidad, inevitablemente tendrá obesidad”.</p>
+<p><strong>¿Cómo responderías?</strong> Una explicación científica sería que la variante puede influir en la susceptibilidad, pero el riesgo resulta de la interacción de múltiples genes y factores ambientales. La genética no es una sentencia ni permite juzgar la salud de una persona por su apariencia.</p>
+<div class="callout"><strong>Para recordar</strong><br>• La obesidad es compleja y multifactorial.<br>• FTO, MC4R, TMEM18, BDNF y SH2B1 son ejemplos estudiados, pero no son los únicos.<br>• Asociación no equivale siempre a causalidad.<br>• La información genética debe interpretarse con cautela y sin estigmatizar.</div>
+<p class="small"><strong>Nota:</strong> este material es educativo y no sustituye la valoración clínica ni una prueba genética indicada por profesionales.</p>
+</section>
+</main>
+<footer><div class="wrap"><strong>Recurso interactivo:</strong> Variantes genéticas asociadas a la obesidad<br>Enfoque: comprensión conceptual, pensamiento crítico y aplicación.</div></footer>
+<script>
+function toggleCard(btn){const card=btn.closest('.gene');card.classList.toggle('open');btn.textContent=card.classList.contains('open')?'Ocultar información':'Conocer función';}
+function reveal(id){const el=document.getElementById(id);el.classList.toggle('show');}
+const data=[
+{q:"¿Qué significa que una variante genética esté asociada con mayor riesgo de obesidad?",a:["Que la persona desarrollará obesidad con seguridad.","Que se observa una relación estadística y puede cambiar la probabilidad, sin determinar el resultado individual.","Que los hábitos y el entorno dejan de influir."],correct:1,why:"Correcto: asociación significa relación estadística; no equivale a certeza ni elimina la influencia ambiental."},
+{q:"¿Qué gen participa en una vía importante para regular hambre y saciedad?",a:["MC4R","Un gen que solo determina el color de ojos","Ningún gen participa en esas señales"],correct:0,why:"MC4R forma parte de una vía de señalización que interviene en el apetito y el balance energético."},
+{q:"¿Cuál es la conclusión más adecuada sobre la genética y la obesidad?",a:["Un único gen explica todos los casos.","La obesidad es multifactorial y puede involucrar muchas variantes y factores ambientales.","La genética no tiene ninguna relación con el peso."],correct:1,why:"La obesidad tiene una arquitectura compleja: intervienen múltiples variantes genéticas y factores biológicos, sociales y ambientales."}
+];
+let answers={};
+function renderQuiz(){const root=document.getElementById('questions');root.innerHTML='';data.forEach((item,i)=>{const box=document.createElement('div');box.className='question';box.innerHTML='<p>'+(i+1)+'. '+item.q+'</p><div class="options">'+item.a.map((a,j)=>'<button class="option" data-q="'+i+'" data-a="'+j+'"><span>○</span><span>'+a+'</span></button>').join('')+'</div><div class="feedback" id="fb'+i+'" aria-live="polite"></div>';root.appendChild(box);});root.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>choose(+btn.dataset.q,+btn.dataset.a,btn)));updateProgress();}
+function choose(q,a,btn){answers[q]=a;document.querySelectorAll('.option[data-q="'+q+'"]').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');const fb=document.getElementById('fb'+q);fb.className='feedback show '+(a===data[q].correct?'correct':'incorrect');fb.innerHTML=(a===data[q].correct?'<strong>¡Bien!</strong> ':'<strong>Revisa esta idea.</strong> ')+data[q].why;updateProgress();}
+function updateProgress(){document.getElementById('bar').style.width=(Object.keys(answers).length/data.length*100)+'%';}
+function finishQuiz(){if(Object.keys(answers).length<data.length){const missing=data.length-Object.keys(answers).length;document.getElementById('result').style.display='block';document.getElementById('result').innerHTML='Te falta'+(missing>1?'n ':' ')+missing+' pregunta'+(missing>1?'s':'')+'. Selecciona una respuesta en cada pregunta y vuelve a calificar.';return;}let score=0;data.forEach((d,i)=>{if(answers[i]===d.correct)score++;});const r=document.getElementById('result');r.style.display='block';r.innerHTML='<span class="score">Resultado: '+score+' de '+data.length+'</span><br>'+(score===3?'¡Excelente! Comprendes la diferencia entre predisposición y determinismo genético.':score===2?'¡Buen trabajo! Revisa la retroalimentación de la pregunta que fallaste.':'Vuelve a explorar las tarjetas y lee la retroalimentación para reforzar los conceptos.');document.getElementById('retry').style.display='inline-block';}
+function resetQuiz(){answers={};document.getElementById('result').style.display='none';document.getElementById('retry').style.display='none';renderQuiz();window.scrollTo({top:document.getElementById('quiz').offsetTop,behavior:'smooth'});}
+renderQuiz();
+</script>
+</body></html>
