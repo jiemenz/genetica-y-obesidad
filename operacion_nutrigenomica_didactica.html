@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operación Nutrigenómica: ¿los genes tienen la última palabra?</title>
+<style>
+:root{--ink:#17243b;--blue:#234a80;--pink:#f15b91;--mint:#b8f2dc;--yellow:#ffe28a;--lilac:#e8dcff;--paper:#fff;--muted:#56647a}
+*{box-sizing:border-box}body{margin:0;background:#f4f6ff;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+header{background:linear-gradient(130deg,#17243b,#234a80);color:#fff;padding:30px 18px 36px;position:relative;overflow:hidden}
+header:after{content:"🧬";position:absolute;font-size:8rem;opacity:.15;right:5%;top:12px}.wrap{max-width:960px;margin:auto;padding:18px}.badge{display:inline-block;background:var(--yellow);color:#17243b;padding:5px 10px;border-radius:999px;font-weight:900;font-size:.78rem;letter-spacing:.06em}
+h1{font-size:clamp(2rem,6vw,3.25rem);line-height:1.08;margin:14px 0;max-width:720px}header p{max-width:700px;font-size:1.08rem}.hero-emoji{font-size:1.4rem}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}nav a{background:#fff;border:1px solid #d6dced;border-radius:999px;padding:8px 12px;text-decoration:none;color:var(--blue);font-weight:800;font-size:.9rem}
+.card{background:#fff;border:1px solid #e0e5f0;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 8px 22px #253d6b0c}
+h2{margin-top:0;color:var(--blue)}h3{margin-bottom:5px}.quest{border-left:6px solid var(--pink)}.answer{background:#f0fbf6;border-radius:10px;padding:12px 14px}.fun{background:var(--lilac);padding:14px;border-radius:13px}.yellow{background:#fff8dc;padding:14px;border-radius:13px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.tile{padding:15px;border-radius:14px;background:#e8f8f1}.tile:nth-child(2){background:#fff0f5}.tile:nth-child(3){background:#fff8dc}
+button{background:var(--blue);color:white;border:0;border-radius:10px;padding:11px 15px;font:inherit;font-weight:800;cursor:pointer;margin:5px 4px 5px 0}button.alt{background:#e9edfa;color:var(--blue)}.options label{display:block;border:1px solid #dbe2ed;border-radius:10px;padding:10px;margin:8px 0;cursor:pointer}.options label:has(input:checked){background:#e9f8f0;border-color:#55a987}.feedback{display:none;margin-top:10px;padding:12px;border-radius:10px}.feedback.show{display:block}.good{background:#e3f8ec}.bad{background:#fff0e7}
+table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid #dce2ed;padding:9px;text-align:left;vertical-align:top}th{background:#edf1ff}textarea{width:100%;min-height:100px;border:1px solid #cbd5e5;border-radius:10px;padding:12px;font:inherit}.small{color:var(--muted);font-size:.92rem}.pill{display:inline-block;background:var(--mint);border-radius:7px;padding:3px 8px;font-weight:800}.answerbox{display:none}.answerbox.show{display:block}.progress{height:9px;background:#dfe5f0;border-radius:99px;overflow:hidden}.progress div{height:100%;width:0;background:var(--pink);transition:width .25s}
+footer{text-align:center;color:var(--muted);padding:24px}
+@media(max-width:580px){.wrap{padding:13px}.card{padding:15px}table{font-size:.9rem}th,td{padding:7px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="badge">MISIÓN INTERACTIVA · NUTRIGENÓMICA</span>
+<h1>🧬 Operación: ¿los genes tienen la última palabra?</h1>
+<p>¡Bienvenida/o al laboratorio! Tu misión es descubrir qué pueden explicar algunas variantes genéticas sobre la obesidad… y qué cosas no pueden asegurar.</p>
+<p class="hero-emoji">🔎 Investiga · 🧠 Decide · 🎨 Comunica</p>
+</div></header>
+<main class="wrap">
+<nav><a href="#misiones">🎯 Misiones</a><a href="#aprende">🧬 Aprende</a><a href="#reto">🎮 Mini quiz</a><a href="#caso">🕵️ Caso misterioso</a><a href="#entrega">🏆 Tu entrega</a></nav>
+<section class="card" id="misiones">
+<h2>🚀 Tu mapa de misiones</h2>
+<div class="grid">
+<div class="tile"><h3>1. Detectives de ideas</h3><p>Piensa si los genes deciden todo sobre el peso corporal.</p><span class="pill">5 min</span></div>
+<div class="tile"><h3>2. Laboratorio genético</h3><p>Conoce los genes <i>FTO</i> y <i>MC4R</i> y revisa fuentes.</p><span class="pill">12 min</span></div>
+<div class="tile"><h3>3. Resuelve el caso</h3><p>Detecta exageraciones y arma una explicación responsable.</p><span class="pill">10 min</span></div>
+<div class="tile"><h3>4. Comunica tu hallazgo</h3><p>Crea una mini infografía y demuestra lo aprendido.</p><span class="pill">15 min</span></div>
+</div>
+</section>
+<section class="card" id="aprende">
+<h2>🧠 Laboratorio exprés: aprende sin memorizar de más</h2>
+<div class="grid">
+<div class="tile"><h3>🧬 ¿Qué es una variante?</h3><p>Es una diferencia en la secuencia del ADN. Su efecto puede ser pequeño, importante o no producir una consecuencia evidente.</p></div>
+<div class="tile"><h3>🍽️ ¿Qué estudia la nutrigenómica?</h3><p>Explora cómo los componentes de la alimentación se relacionan con la expresión y función de los genes.</p></div>
+<div class="tile"><h3>🌎 Genes + entorno</h3><p>El peso corporal se relaciona con muchos factores: biología, alimentación, sueño, actividad, medicamentos y condiciones sociales.</p></div>
+</div>
+<h3>🧩 Dos pistas importantes</h3>
+<table><thead><tr><th>Gen</th><th>¿Qué se ha estudiado?</th><th>Ojo con esta idea</th></tr></thead><tbody>
+<tr><td><strong><i>FTO</i></strong></td><td>Algunas variantes se asocian estadísticamente con diferencias en susceptibilidad a la obesidad.</td><td>No significa que una persona con esa variante desarrollará obesidad inevitablemente.</td></tr>
+<tr><td><strong><i>MC4R</i></strong></td><td>Participa en vías relacionadas con apetito, saciedad y balance energético.</td><td>Los efectos dependen de la variante y del contexto; no es una explicación única para todos los casos.</td></tr>
+</tbody></table>
+<div class="yellow"><strong>🔑 Código secreto:</strong> “Asociación” no significa “destino”. La obesidad es compleja y multifactorial; no debemos juzgar a una persona por sus genes o su peso.</div>
+<h3>🔗 Fuentes para investigar</h3>
+<ul>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=FTO+MC4R+obesity+review">PubMed: estudios y revisiones sobre FTO, MC4R y obesidad</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/gene/4160">NCBI: información del gen MC4R</a></li>
+<li><a href="https://www.mentimeter.com/">Mentimeter: sondeo inicial</a> · <a href="https://www.canva.com/">Canva: ficha visual</a> · <a href="https://forms.google.com/">Google Forms: evaluación</a></li>
+</ul>
+</section>
+<section class="card quest" id="reto">
+<h2>🎮 Mini quiz: comprueba tus poderes científicos</h2>
+<p class="small">Elige una opción y toca “Comprobar”. Recibirás una explicación inmediata.</p>
+<div id="quiz"></div>
+<button onclick="checkQuiz()">Comprobar respuestas</button><button class="alt" onclick="resetQuiz()">Volver a intentar</button>
+<div id="quizResult" class="feedback"></div>
+</section>
+<section class="card" id="caso">
+<h2>🕵️ Caso misterioso: el titular exagerado</h2>
+<div class="fun"><strong>El titular viral dice:</strong> “¡Los científicos descubrieron el gen que determina quién tendrá obesidad!”.</div>
+<p>Un equipo debe revisar el titular antes de compartirlo. ¿Cuál es la mejor decisión?</p>
+<div class="options" id="caseOptions">
+<label><input type="radio" name="case" value="a"> Compartirlo: si hay un gen, el resultado está decidido.</label>
+<label><input type="radio" name="case" value="b"> Rechazar el titular como demasiado absoluto y revisar evidencia, tamaño del efecto y factores adicionales.</label>
+<label><input type="radio" name="case" value="c"> Concluir que los genes nunca influyen en la obesidad.</label>
+</div>
+<button onclick="checkCase()">Resolver el caso</button>
+<div id="caseFeedback" class="feedback"></div>
+<h3>✍️ Tu argumento</h3>
+<p>Escribe una versión más responsable del titular y menciona dos factores no genéticos que también pueden influir.</p>
+<textarea id="argument" placeholder="Mi titular responsable sería… También consideraría…"></textarea>
+<button class="alt" onclick="saveDraft()">Mostrar resumen de mi respuesta</button>
+<div id="draftFeedback" class="feedback"></div>
+</section>
+<section class="card" id="entrega">
+<h2>🏆 Producto final: ficha “Lo que los genes sí y no dicen”</h2>
+<p>Elabora una mini infografía en Canva o una ficha digital que incluya:</p>
+<ol><li>Una explicación sencilla de variante genética y susceptibilidad.</li><li>Un dato sobre <i>FTO</i> y otro sobre <i>MC4R</i>.</li><li>Dos factores ambientales o conductuales que también deben considerarse.</li><li>Una conclusión que evite el determinismo y el estigma.</li><li>Dos fuentes consultadas.</li></ol>
+<h3>📊 Rúbrica de evaluación (100 puntos)</h3>
+<table><thead><tr><th>Criterio</th><th>Puntos</th><th>¿Qué se busca?</th></tr></thead><tbody>
+<tr><td>Comprensión científica</td><td>25</td><td>Explica variantes y susceptibilidad correctamente.</td></tr>
+<tr><td>Uso de fuentes</td><td>25</td><td>Usa evidencia confiable y reconoce sus límites.</td></tr>
+<tr><td>Análisis del caso</td><td>25</td><td>Justifica por qué el titular es exagerado.</td></tr>
+<tr><td>Comunicación responsable</td><td>15</td><td>Evita afirmaciones deterministas y estigmatizantes.</td></tr>
+<tr><td>Diseño y referencias</td><td>10</td><td>La ficha es clara, ordenada y cita fuentes.</td></tr>
+</tbody></table>
+<div class="yellow"><strong>💬 Retroalimentación:</strong> el docente destacará un acierto y un paso concreto de mejora. El estudiante podrá corregir su ficha después de revisar los comentarios. Para la evaluación formal, el docente puede trasladar el mini quiz a Google Forms para registrar las respuestas.</div>
+</section>
+<section class="card">
+<h2>📚 ¿Por qué funciona esta propuesta?</h2>
+<p><strong>Pedagógica:</strong> usa misiones breves, pregunta guía, investigación, caso-problema y creación de un producto para favorecer aprendizaje activo y pensamiento crítico.</p>
+<p><strong>Tecnológica:</strong> combina enlaces web accesibles desde celular o computadora con herramientas conocidas para consultar, crear y evaluar. El docente debe crear la encuesta, la plantilla y el formulario propios; los enlaces externos son plataformas o fuentes de consulta.</p>
+<p><strong>Disciplinar:</strong> conecta genética, alimentación y ambiente mediante ejemplos de <i>FTO</i> y <i>MC4R</i>, fortalece la lectura crítica de evidencia y promueve comunicación ética sobre obesidad.</p>
+<p class="small">Aviso: material educativo; no es una herramienta de diagnóstico ni permite predecir el riesgo individual de una persona.</p>
+</section>
+<footer>🧬 Operación Nutrigenómica · Aprende, cuestiona y comunica con evidencia.</footer>
+</main>
+<script>
+const questions=[
+{q:"1. ¿Qué significa que una variante de FTO esté asociada con obesidad?",opts:["Que todas las personas con esa variante tendrán obesidad.","Que se ha observado una relación estadística, pero no un destino inevitable.","Que el ambiente ya no importa."],correct:1,why:"¡Correcto! Asociación indica una relación observada; no garantiza el resultado de una persona."},
+{q:"2. ¿Qué función se relaciona con MC4R?",opts:["Participa en vías vinculadas con apetito y balance energético.","Decide por sí solo el peso de cualquier persona.","Solo determina el color de ojos."],correct:0,why:"MC4R participa en señales biológicas relacionadas con apetito, saciedad y balance energético."},
+{q:"3. ¿Cuál describe mejor la obesidad?",opts:["Una condición explicada por un solo gen.","Una condición multifactorial en la que interactúan genes y ambiente.","Una condición sin ninguna relación con la biología."],correct:1,why:"La obesidad es compleja y puede relacionarse con factores genéticos, biológicos, ambientales y sociales."},
+{q:"4. ¿Qué estudia la nutrigenómica?",opts:["Solo las calorías de los alimentos.","Cómo componentes de la alimentación se relacionan con la expresión y función de los genes.","Únicamente las enfermedades infecciosas."],correct:1,why:"La nutrigenómica investiga las relaciones entre nutrientes y función o expresión génica."},
+{q:"5. ¿Cuál es una comunicación responsable de un resultado genético?",opts:["Afirmar que el futuro de la persona ya está decidido.","Culpar a la persona por su peso.","Explicar los límites de la evidencia y evitar estigmas."],correct:2,why:"La información genética debe explicarse con rigor, contexto y respeto."}
+];
+function renderQuiz(){const root=document.getElementById('quiz');root.innerHTML=questions.map((q,i)=>`<div class="question"><p><strong>${q.q}</strong></p><div class="options">${q.opts.map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join('')}</div><div id="fb${i}" class="feedback"></div></div>`).join('')}
+function checkQuiz(){let score=0,answered=0;questions.forEach((q,i)=>{const sel=document.querySelector(`input[name="q${i}"]:checked`),fb=document.getElementById(`fb${i}`);fb.className='feedback show '+(sel&&Number(sel.value)===q.correct?'good':'bad');if(sel){answered++;if(Number(sel.value)===q.correct){score++;fb.textContent='✅ '+q.why}else{fb.textContent='💡 Revisa la idea clave: '+q.why}}else{fb.textContent='Elige una opción. Pista: '+q.why}});const r=document.getElementById('quizResult');r.className='feedback show '+(score>=4?'good':'bad');r.textContent=`Resultado: ${score} de ${questions.length} correctas (${answered} respondidas). ${score>=4?'¡Buen trabajo, detective científico!':'Puedes intentarlo otra vez y aprender de la retroalimentación.'}`}
+function resetQuiz(){document.querySelectorAll('#quiz input').forEach(x=>x.checked=false);document.querySelectorAll('#quiz .feedback').forEach(x=>{x.className='feedback';x.textContent=''});document.getElementById('quizResult').className='feedback';document.getElementById('quizResult').textContent=''}
+function checkCase(){const sel=document.querySelector('input[name="case"]:checked'),fb=document.getElementById('caseFeedback');fb.className='feedback show '+(sel&&sel.value==='b'?'good':'bad');fb.textContent=sel&&sel.value==='b'?'🎉 ¡Caso resuelto! Un titular científico debe reflejar la evidencia y reconocer que las variantes no determinan por sí solas el resultado.':'Pista: evita los extremos. Los genes pueden influir, pero una asociación no significa certeza; revisa la evidencia y otros factores.'}
+function saveDraft(){const val=document.getElementById('argument').value.trim(),fb=document.getElementById('draftFeedback');fb.className='feedback show '+(val.length>20?'good':'bad');fb.textContent=val.length>20?'¡Borrador guardado en esta pantalla! Revísalo: ¿menciona límites de la genética y dos factores adicionales? Copia tu texto antes de cerrar la página.':'Escribe una o dos oraciones más para explicar tu titular y mencionar dos factores no genéticos.'}
+renderQuiz();
+</script>
+</body>
+</html>
